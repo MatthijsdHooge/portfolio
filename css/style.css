@@ -31,7 +31,28 @@ body {
   transform: scale(0.98);
 }
 
-<.gradient-text {
-  color: linear-gradient(#F2E6A7, #A67449);
-}>
-<#F2E6A7, #D9BB84  #A67449 #262626  #0D0D0D>
+.gradient-text {
+  background: linear-gradient( #A67449, #F2E6A7 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+
